@@ -1,0 +1,248 @@
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#welcome-section {
+  height: 100vh;
+  width: 100%;
+  background-color: #f4e3b2;
+}
+#navbar {
+  position: fixed;
+  top: 9px;
+  right: 5%;
+}
+
+#projects {
+  background-image: linear-gradient(#f4e3b2, white);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-tile {
+  padding: 20px;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.navlink p {
+  color: #d19c4c;
+  background-color: white;
+
+  width: 80px;
+  text-align: right;
+  margin: 2px;
+  padding: 2px;
+}
+a {
+  text-decoration: none;
+}
+.navlink:hover p {
+  background-image: linear-gradient(to right, pink, white);
+  color: black;
+  text-align: center;
+}
+
+.project-tile {
+  width: 180px;
+}
+.project-tile img {
+  width: 180px;
+  height: auto;
+}
+.contactlink {
+  background-color: lightblue;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.container {
+  display: grid;
+  width: 500px;
+  justify-content: center;
+  grid-template-columns: 50px 100px 100px 100px 100px;
+  grid-template-rows: 50px 100px 100px 100px 100px 100px;
+}
+.one {
+  width: 300px;
+  height: 200px;
+  z-index: 2;
+  margin-top: 170px;
+  background-color: #9d5f38;
+  display: grid;
+  grid-area: 3 / 4 / span 3 / span 2;
+}
+.h1welcome {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 30px;
+  margin-bottom: 90px;
+}
+.two {
+  margin-top: 170px;
+  width: 300px;
+  height: 200px;
+  z-index: 3;
+  background-color: brown;
+  display: grid;
+  grid-area: 2 / 2 / span 3 / span 2;
+}
+img {
+  height: 200px;
+}
+.three {
+  margin-top: 170px;
+  width: 300px;
+  height: 300px;
+  z-index: 1;
+  background-color: #d19c4c;
+  display: grid;
+  grid-area: 1 / 3 / span 3 / span 5;
+}
+
+
+
+@media (max-width: 670px) {
+  
+  .three {
+    display: none;
+    margin-top: 0px;
+  }
+  .two {
+    margin-top: -170px;
+    
+  }
+  .one {
+    background-color: #d19c4c;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+
+    
+  }
+  .h1welcome {
+    margin: 0px;
+  }
+  
+  #welcome-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+  }
+}
+
+
+
+div.contactlinks {
+  display: flex;
+  
+}
+h3.contactlink {
+  margin: 20px;
+}
+h2.coffeeinvite {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+}
+
+#contact {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+</style>
+
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Portfolio Website</title>
+</head>
+
+<body>
+  
+    
+      <nav id="navbar" class="headerdiv navlinks">
+        <a class="navlink" href="#welcome-section">
+          <p>Back to Top</p>
+        </a>
+        <a class="navlink" href="#projects">
+          <p>Projects</p>
+        </a>
+        <a class="navlink" href="#contact">
+          <p>Contacts</p>
+        </a>
+      </nav>
+  
+  
+  <main>
+    <div id="welcome-section" class="container">
+      <div class="welcome-square one">
+        <h1 class="h1welcome">Welcome.</h1>
+      </div>
+      <div class="welcome-square two"><img src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="person with yellow jumper typing on laptop" /></div>
+      <div class="welcome-square three"></div>
+    </div>
+    
+    <div id="projects" class="project-tiles">
+      <div class="project-tile">
+        <h2>Project One</h2>
+        <a href="https://github.com/elisecodes/learning/blob/main/FCC%20Technical%20Documentation%20Page"><img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80" alt="" />
+        </a>
+      </div>
+      <div class="project-tile">
+        <h2>Project Two</h2>
+        <img src="https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="" />
+      </div>
+      <div class="project-tile">
+        <h2>Project Three</h2>
+        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="" />
+      </div>
+    </div>
+    
+    <!-- CONTACT SECTION -->
+    
+    <div id="contact" class="contactdiv">
+      <h2 class="coffeeinvite">Let's grab a coffee!</h2>
+      <div class="contactlinks">
+      <a id="profile-link" href="https://github.com/elisecodes" target="_blank">
+        <h3 class="contactlink">GitHub</h3>
+      </a>
+      <a href="https://www.instagram.com/elisecodes/" style="none">
+        <h3 class="contactlink">Instagram</h3>
+        </a></div>
+    </div>
+  </main>
+  <footer></footer>
+</body>
